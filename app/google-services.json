@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "290472410528",
+    "firebase_url": "https://widhyasecondmicrotask.firebaseio.com",
+    "project_id": "widhyasecondmicrotask",
+    "storage_bucket": "widhyasecondmicrotask.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290472410528:android:2b0252aeecc2fc50",
+        "android_client_info": {
+          "package_name": "com.example.Widhya_SecondMicroTask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290472410528-7cu411feg4rlgbaa0bmurdaa9j1rcm83.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.Widhya_SecondMicroTask",
+            "certificate_hash": "816666d38fcb451e8fb6fd9699ffbb75cae5c29c"
+          }
+        },
+        {
+          "client_id": "290472410528-3l3d6rh4s2tsgtkganvjrfimjckehi4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8auITTXHvuhmsaKgaP8Pdl8GhG1ZxAGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290472410528-3l3d6rh4s2tsgtkganvjrfimjckehi4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
