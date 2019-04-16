@@ -2,5 +2,6 @@
     <string name="app_name">Widhya_SecondMicroTask</string>
     <string name="widhya">Widhya</string>
     <string name="logout">LogOut !</string>
+    <string name="welcome_message">welcome to Widhya Internship Second micro task.</string>
 
 </resources>

@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
+    android:noHistory="true"
     tools:context=".Widhya_SecondMicroTask.HomeActivity">
+
 
     <ImageView
         android:id="@+id/photoUrl"
@@ -19,7 +21,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="TODO" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -33,14 +36,14 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/reg_textview_style"
         android:fontFamily="cursive"
         android:text="@string/widhya"
         android:textAlignment="center"
         android:textColor="#000"
-        android:textSize="32dp"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,33 +54,30 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/reg_btn_style"
         android:enabled="false"
         android:text="@string/logout"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.639" />
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/email"
-        android:layout_width="265dp"
-        android:layout_height="49dp"
+        android:id="@+id/textView"
+        android:layout_width="361dp"
+        android:layout_height="84dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
-        android:visibility="invisible"
+        android:text="@string/welcome_message"
+        android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_sign_out"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
 </android.support.constraint.ConstraintLayout>
