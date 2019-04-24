@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -22,7 +21,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.chirag_jain.R;
 import com.firebase.ui.auth.AuthUI;
-import com.firebase.ui.auth.ErrorCodes;
 import com.firebase.ui.auth.IdpResponse;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -41,6 +39,7 @@ public class HomeActivity extends AppCompatActivity {
     private Button btn_sign_out;
     ImageView photoUrl;
     TextView name, email;
+    private Button btn_payviapaytm;
 
 
     @Override
@@ -48,6 +47,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         btn_sign_out = (Button) findViewById(R.id.btn_sign_out);
+        btn_payviapaytm = (Button)findViewById(R.id.payviapaytm);
         photoUrl = (ImageView) findViewById(R.id.photoUrl);
         email = (TextView) findViewById(R.id.email);
         name = (TextView) findViewById(R.id.name);
@@ -69,6 +69,13 @@ public class HomeActivity extends AppCompatActivity {
 
                     }
                 });
+            }
+        });
+        btn_payviapaytm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(HomeActivity.this, paymentGateway.class);
+                startActivity(myIntent);
             }
         });
 
@@ -188,7 +195,6 @@ public class HomeActivity extends AppCompatActivity {
         }
         return false;
     }
-
 
 }
 

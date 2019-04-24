@@ -1,12 +1,9 @@
 package com.example.chirag_jain.Widhya_SecondMicroTask;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.example.chirag_jain.R;
 
@@ -18,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Handler handler = new Handler();
         handler.postDelayed(r, 3000);
-
     }
 
     Runnable r = new Runnable() {

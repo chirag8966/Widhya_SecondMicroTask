@@ -1,7 +1,12 @@
 <resources>
-    <string name="app_name">Widhya_SecondMicroTask</string>
+    <string name="app_name">Widhya_paytmIntegration</string>
     <string name="widhya">Widhya</string>
     <string name="logout">LogOut !</string>
     <string name="welcome_message">welcome to Widhya Internship Second micro task.</string>
+    <string name="order_id">Order ID</string>
+    <string name="cust_id">Cust ID</string>
+    <string name="paytm">Paytm</string>
+    <string name="amount_to_be_paid">Amount to be Paid:</string>
+    <string name="amount">Amount</string>
 
 </resources>
